@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Senha NeoX3</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1 class="title">Gerador de Senha NeoX3</h1>
+        <p class="subtitle">
+          Utilize nosso gerador online para criar uma senha forte e segura!
+        </p>
+      </section>
+
+      <section class="box">
+        <div class="password">
+          <div class="text">
+            <input type="text" name="password" id="password" />
+          </div>
+          <div class="actions">
+            <button id="copy-1">
+              <img src="./src/imagens/copy.png" width="42" />
+            </button>
+            <button id="refresh">
+              <img src="./src/imagens/refresh.png" width="42" />
+            </button>
+          </div>
+        </div>
+
+        <div class="security-indicator">
+          <div id="security-indicator-bar" class="bar"></div>
+          <div><span><b id="security-indicator-forcasenha" class="forcasenha"></b></span></div>
+        </div>
+      </section>
+
+      <section class="box customize">
+        <h3 class="title">Personalizar</h3>
+        <div class="actions">
+          <div class="password-length">
+            <p>Tamanho: <span id="password-length-text">14</span></p>
+            <input
+              type="range"
+              name="password-length"
+              id="password-length"
+              class="slider"
+              value="14"
+              min="4"
+              max="70"
+            />
+          </div>
+          <div class="config">
+            <label class="checkbox-container">
+              <spam class="text">ABC</spam>
+              <input type="checkbox" id="uppercase-check" checked />
+              <spam class="checkmark"></spam>
+            </label>
+            <label class="checkbox-container">
+              <spam class="text">abc</spam>
+              <input type="checkbox" id="lowercase-check" checked />
+              <spam class="checkmark"></spam>
+            </label>
+            <label class="checkbox-container">
+              <spam class="text">123</spam>
+              <input type="checkbox" id="number-check" checked />
+              <spam class="checkmark"></spam>
+            </label>
+            <label class="checkbox-container">
+              <spam class="text">#?&</spam>
+              <input type="checkbox" id="symbol-check" checked />
+              <spam class="checkmark"></spam>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <div class="submit">
+        <button id="copy-2">Copiar Senha</button>
+      </div>
+    </main>
+
+    <br />
+    <br />
+    
+    <div class="container-respostas">
+      <h1 class="title-2">Quais as características de uma senha forte?</h1>
+      <div class="container-respostas-1">
+      <div class="resposta-1">
+      <img src="./src/imagens/senha-longa.png" class="senha-longa"  width="42" />
+      <h2 class="resposta-1">Longa</h2></div>
+      <div class="resposta-2">
+      <img src="./src/imagens/senha-complexa.svg" class="senha-complexa" width="42" />
+      <h2 class="resposta-2">Complexa</h2></div>
+      <div class="reposta-3">
+      <img src="./src/imagens/senha-exclusiva.png" class="senha-exclusiva" width="42" />
+      <h2 class="resposta-3">Exclusiva</h2></div>
+</div>
+      <div class="container-respostas-2">
+      
+      <p class="descricaoResp1">
+        Quanto mais longa a senha, mais segura ela é. Senhas devem ter pelo
+        menos 10 caracteres.
+      </p>
+      
+      <p class="descricaoResp2">
+        Uma senha forte é composta por uma combinação de letras (incluindo
+        maiúsculas e minúsculas), números e símbolos para formar uma linha de
+        caracteres de difícil previsão que não se pareça com nenhum nome ou
+        palavras comuns.
+      </p>
+      <p class="descricaoResp3">
+        Uma senha forte deve ser utilizada somente em uma única conta para
+        reduzir a vulnerabilidade em caso de violação de dados.
+      </p>
+      </p>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <script src="./src/js/script.js"></script>
+
+  </body>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Nunito:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/responsivo.css" />
+</html>
