@@ -259,9 +259,7 @@ main {
 }
 
 .container-respostas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: inline-block;
     align-content: center;
     justify-content: space-around;
     align-items: center;
@@ -271,19 +269,19 @@ main {
     border-radius: 8px;
     margin-left: 1rem;
     margin-right: 1rem;
-    padding-bottom: 2rem;
 }
 .container-respostas-1 {
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     text-align: center;
 }
 .container-respostas-2 {
-    display: flex;
-    justify-content:space-around ;
-    align-items: baseline;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     text-align: justify;
     gap: 3rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
