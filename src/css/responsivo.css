@@ -1,34 +1,30 @@
-@media only screen and (max-width: 480px) {
-    .password {
-        padding: 1rem;
-    }
-    .password .text input {
-        font-size: 1.5rem;
-    }
-    .password .text input.font-sm {
-        font-size: 1.2rem;
-    }
-    .password .text input.font-xs {
-    font-size: 1rem;
-    }
-    .password .text input.font-xxs {
-    font-size: 1rem;
-    }
-    .password .actions img {
-        width: 24px;
-    }
-}
-@media(max-width: 1280px) {
-    body {
+@media (max-width: 1280px){
+    body{
         padding: 0 40px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
+    body{
+        padding: 40px;
+    }
 }
 
-@media (max-width: 425px) {
-    body {
+@media (max-width: 425px){
+    body{
         padding: 40px;
+    }
+
+    .container-respostas {
+        margin: 0;
+}
+    .container-respostas-1 {
+        display: inline-flex;
+        gap: 20px;
+    }
+
+    .container-respostas-2 {
+        display: inline-flex;
+        gap: 20px;
     }
 }
